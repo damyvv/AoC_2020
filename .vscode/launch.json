@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "program": "${file}",
+            "env": {
+                "PATH": "/home/damyvv/.vscode-server/bin/e5e9e69aed6e1984f7499b7af85b3d05f9a6883a/bin:/home/damyvv/.opam/4.03.0/bin:/home/damyvv/.rvm/bin:/home/damyvv/.rvm/gems/ruby-2.7.0/bin:/home/damyvv/.rvm/gems/ruby-2.7.0@global/bin:/home/damyvv/.rvm/rubies/ruby-2.7.0/bin:/home/damyvv/.nvm/versions/node/v13.5.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/d/Program Files/Amazon Corretto/jdk11.0.5_10/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/libnvvp:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v3.2/bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/Program Files/Java/jdk-11.0.2/bin:/mnt/d/Program Files/Git/cmd:/mnt/d/Program Files/Apache/apache-maven-3.6.0/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2019.1/:/mnt/d/Program Files/Gource/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Program Files/MATLAB/R2019b/bin:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/:/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/:/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/mnt/d/nvm:/mnt/c/Program Files/nodejs:/mnt/d/OpenOCD-20200114-0.10.0/bin:/mnt/d/Program Files/CMake/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files (x86)/GNU Tools Arm Embedded/9 2019-q4-major/bin:/mnt/c/Users/Damy van Valenberg/.cargo/bin:/mnt/c/Users/Damy van Valenberg/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/Damy van Valenberg/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/Damy van Valenberg/AppData/Local/Microsoft/WindowsApps:/mnt/d/Users/Damy van Valenberg/AppData/Local/Programs/Fiddler:/mnt/c/Users/Damy van Valenberg/Documents/temp/windiff:/mnt/d/Users/Damy van Valenberg/platform-tools:/mnt/c/Users/Damy van Valenberg/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/mCRL2/bin:/mnt/c/Users/Damy van Valenberg/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/d/z3-4.8.8-x64-win/bin:/snap/bin:/home/damyvv/.rvm/bin:/home/damyvv/.rvm/bin:/home/damyvv/.rvm/bin:/home/damyvv/.rvm/bin",
+                "GEM_HOME": "/home/damyvv/.rvm/gems/ruby-2.7.0",
+                "GEM_PATH": "/home/damyvv/.rvm/gems/ruby-2.7.0:/home/damyvv/.rvm/gems/ruby-2.7.0@global",
+                "RUBY_VERSION": "ruby-2.7.0"
+            }
+        }
+    ]
+}
