@@ -1,12 +1,10 @@
 $input = File.read('day3_input.txt').lines.map { |l| l.chars - ["\n"] }
 
 def trees_at_slope(right, down)
-    trees = 0
-    (0..$input.size-1).step(down) do |y|
+    (0..$input.size-1).step(down).count do |y|
         r = $input[y]
-        trees += 1 if r[(y*right/down) % r.size] == "#"
+        r[(y*right/down) % r.size] == "#"
     end
-    trees
 end
 
 # Part 1
