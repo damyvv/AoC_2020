@@ -1,14 +1,9 @@
 input = File.read('day7_input.txt').lines
     .map do |l|
         m = l.match(/(\D*) bags contain (.*)/)
-        {   m[1] => m[2].split(',').map do |b|
-                if b.start_with?("no")
-                    {}
-                else
-                    m2 = b.match(/(\d+) (\D*) bag.*/)
-                    { m2[2] => m2[1] }
-                end
-            end.reduce(Hash.new, :merge)
+        {   m[1] => m[2].split(',')
+            .map { |b| (m2 = b.match(/(\d+) (\D*) bag.*/)) ? { m2[2] => m2[1] } : {} }
+            .reduce(Hash.new, :merge)
         }
     end.reduce(Hash.new, :merge)
 
