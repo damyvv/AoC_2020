@@ -43,7 +43,6 @@ seen = contains_loop?(c)
 puts "Acc: #{c.acc}"
 
 # Part 2
-
 while seen.count
     change = seen.pop
     cinput = input.clone
