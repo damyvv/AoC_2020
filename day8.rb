@@ -21,7 +21,7 @@ class Computer
         when "jmp"
             @pc += arg
         else
-            throw "Unknown instruction"
+            raise "Unknown instruction"
         end
         prev
     end
