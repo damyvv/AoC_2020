@@ -8,18 +8,10 @@ p diff.tally.to_a.map {|e| e[1]}.reduce(:*)
 
 # Part 2
 def tribonacci(idx)
-    begin
-        @cache[0]
-    rescue
-        @cache = [0, 1, 1]
-    end
-    if @cache[idx]
-        @cache[idx]
-    else
-        @cache[idx] = (1..3).map {|n| tribonacci(idx-n) }.sum
-    end
+    @cache[0] rescue @cache = [0, 1, 1]
+    return @cache[idx] if @cache[idx]
+    @cache[idx] = (1..3).map {|n| tribonacci(idx-n) }.sum
 end
 
 groups = diff.join.split('3').select { |s| s.length > 0 }
 p groups.map {|s| tribonacci(s.length+1) }.reduce(:*)
-
