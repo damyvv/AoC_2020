@@ -40,15 +40,13 @@ input.each do |inst|
         waypoint[:x] -= inst[:dist]
     when 'L', 'R'
         deg = inst[:dir] == 'L' ? -inst[:dist] : inst[:dist]
-        deg %= 360
-        case deg
+        case deg % 360
         when 90
             waypoint[:y],waypoint[:x] = -waypoint[:x],waypoint[:y]
         when 180
             waypoint[:x],waypoint[:y] = -waypoint[:x],-waypoint[:y]
         when 270
             waypoint[:y],waypoint[:x] = waypoint[:x],-waypoint[:y]
-        else raise "Invalid rotation #{deg} degrees"
         end
     when 'F'
         ship[:x] += waypoint[:x]*inst[:dist]
