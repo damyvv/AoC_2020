@@ -20,7 +20,7 @@ mem = {}
 input.each do |l|
     if m = l.match(/([01X]{36})/)
         mask = m[1]
-    elsif m = l.match(/\[(\d*)\]\D*(\d*)/)
+    elsif m = l.match(/(\d+)\D+(\d+)/)
         change_mask = mask.gsub(/1/, '0').gsub(/X/, '1').to_i(2)
         or_mask = (mask.gsub(/X/, '0').to_i(2) | m[1].to_i) & ~change_mask
         iter = change_mask
