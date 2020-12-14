@@ -6,7 +6,7 @@ mem = {}
 input.each do |l|
     if m = l.match(/([01X]{36})/)
         mask = m[1]
-    elsif m = l.match(/\[(\d*)\]\D*(\d*)/)
+    elsif m = l.match(/(\d+)\D+(\d+)/)
         val = mask.gsub(/X/, '0').to_i(2)
         bit_mask = mask.gsub(/1/, '0').gsub(/X/, '1').to_i(2)
         mem[m[1].to_i] = (m[2].to_i & bit_mask) | val
