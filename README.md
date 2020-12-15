@@ -16,7 +16,7 @@
 |[12](https://adventofcode.com/2020/day/12)|Rain Risk|[view](/day12.rb)|⭐ ⭐|
 |[13](https://adventofcode.com/2020/day/13)|Shuttle Search|[view](/day13.rb)|⭐ ⭐|
 |[14](https://adventofcode.com/2020/day/14)|Docking Data|[view](/day14.rb)|⭐ ⭐|
-|[15](https://adventofcode.com/2020/day/15)|-|-||
+|[15](https://adventofcode.com/2020/day/15)|Rambunctious Recitation|[view](/day15.rb)|⭐ ⭐|
 |[16](https://adventofcode.com/2020/day/16)|-|-||
 |[17](https://adventofcode.com/2020/day/17)|-|-||
 |[18](https://adventofcode.com/2020/day/18)|-|-||
