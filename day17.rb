@@ -1,4 +1,3 @@
-require 'benchmark'
 require 'set'
 input = File.read("day17_input.txt").lines.map {|l| l.strip.chars }
 
