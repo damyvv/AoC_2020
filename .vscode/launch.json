@@ -14,7 +14,8 @@
                 "GEM_HOME": "/home/damyvv/.rvm/gems/ruby-2.7.0",
                 "GEM_PATH": "/home/damyvv/.rvm/gems/ruby-2.7.0:/home/damyvv/.rvm/gems/ruby-2.7.0@global",
                 "RUBY_VERSION": "ruby-2.7.0"
-            }
+            },
+            "cwd": "${fileDirname}"
         }
     ]
 }
