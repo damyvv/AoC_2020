@@ -42,3 +42,23 @@ def solve2(expr)
 end
 
 p input.map { |expr| parse(expr) }.map { |tree| solve2(tree) }.sum
+
+# Regex solutions
+# Part 1
+p File.read("day18_input.txt").split("\n").map { |l|
+    loop do break unless l.sub!(/\((\d+)\)/, '\1') || 
+                         l.sub!(/(.*?)(\d+\s*[+*]\s*\d+)(.*)/) { "#{$1}#{eval($2)}#{$3}" }
+    end
+    l
+}.map(&:to_i).sum
+
+# Part 2
+p File.read("day18_input.txt").split("\n").map { |l| 
+    loop do
+        break unless
+            l.sub!(/\((\d+)\)/, '\1') || 
+            l.sub!(/(.*?)(\d+\s*[+]\s*\d+)(.*)/) { "#{$1}#{eval($2)}#{$3}" } ||
+            l.sub!(/^(.*?)(\d+\s*[*]\s*\d+)([^(]*)$/) { "#{$1}#{eval($2)}#{$3}" } 
+    end
+    l
+}.map(&:to_i).sum
