@@ -20,7 +20,7 @@
 |[16](https://adventofcode.com/2020/day/16)|Ticket Translation|[view](solutions/day16.rb)|⭐ ⭐|
 |[17](https://adventofcode.com/2020/day/17)|Conway Cubes|[view](solutions/day17.rb)|⭐ ⭐|
 |[18](https://adventofcode.com/2020/day/18)|Operation Order|[view](solutions/day18.rb)|⭐ ⭐|
-|[19](https://adventofcode.com/2020/day/19)|Monster Messages|[view](solutions/day19.rb)|⭐|
+|[19](https://adventofcode.com/2020/day/19)|Monster Messages|[view](solutions/day19.rb)|⭐ ⭐|
 |[20](https://adventofcode.com/2020/day/20)|-|-||
 |[21](https://adventofcode.com/2020/day/21)|-|-||
 |[22](https://adventofcode.com/2020/day/22)|-|-||
