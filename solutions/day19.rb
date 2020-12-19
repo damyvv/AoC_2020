@@ -7,24 +7,33 @@ input = input.strip.split("\n")
 def conforms?(input, rules, current)
     rule = rules[current]
     if rule[0][0].kind_of?(String)
-        return [input.start_with?(rule[0][0]), 1]
+        return input.start_with?(rule[0][0]) ? [1] : []
     end
+    result = []
     rule.each do |srule|
-        eaten = 0
-        conforms = true
+        eatens = [0]
         srule.each do |ssrule|
-            res = conforms?(input[eaten..-1],rules,ssrule)
-            if res[0]
-                eaten += res[1]
-            else
-                conforms = false
-                break
+            next_eaten = []
+            eatens.each do |eaten|
+                ress = conforms?(input[eaten..-1],rules,ssrule)
+                next if ress.length == 0
+                ress.each do |res|
+                    if res > 0
+                        next_eaten.push(eaten+res)
+                    end
+                end
             end
+            eatens = next_eaten
         end
-        return [true, eaten] if conforms
+        result += eatens if eatens.length > 0
     end
-    [false, 0]
+    result
 end
 
 # Part 1
-p input.select { |i| conforms?(i, rules, 0)[1] == i.length }.count
+p input.select { |i| conforms?(i, rules, 0).include?(i.length) }.count
+
+# Part 2
+rules[8].push([42, 8])
+rules[11].push([42, 11, 31])
+p input.select { |i| conforms?(i, rules, 0).include?(i.length) }.count
