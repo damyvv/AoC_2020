@@ -21,7 +21,7 @@
 |[17](https://adventofcode.com/2020/day/17)|Conway Cubes|[view](solutions/day17.rb)|⭐ ⭐|
 |[18](https://adventofcode.com/2020/day/18)|Operation Order|[view](solutions/day18.rb)|⭐ ⭐|
 |[19](https://adventofcode.com/2020/day/19)|Monster Messages|[view](solutions/day19.rb)|⭐ ⭐|
-|[20](https://adventofcode.com/2020/day/20)|-|-||
+|[20](https://adventofcode.com/2020/day/20)|Jurassic Jigsaw|[view](solutions/day20.rb)|⭐ ⭐|
 |[21](https://adventofcode.com/2020/day/21)|-|-||
 |[22](https://adventofcode.com/2020/day/22)|-|-||
 |[23](https://adventofcode.com/2020/day/23)|-|-||
