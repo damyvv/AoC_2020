@@ -32,7 +32,7 @@ p edges.map {|t| t[0]}.reduce(&:*)
 image = Array.new(size) { Array.new(size) }
 image[0][0] = edges.first
 
-def rotate_tile(input, tile, from, to)
+def rotate_tile(tile, from, to)
     flip_lut = [1, 0, 7, 6, 5, 4, 3, 2]
     if (from-to).odd?
         tile[1][:content] = tile[1][:content].map(&:reverse)
@@ -48,7 +48,7 @@ end
 
 # Bit of a hack to fix the orientation of the first tile
 while image[0][0][1][:solutions].map {|s| s[1][0]}.min != 2
-    rotate_tile(input, image[0][0], 0, 2)
+    rotate_tile(image[0][0], 0, 2)
 end
 
 (0..size-1).each do |c|
@@ -58,13 +58,13 @@ end
         if c == 0 && r+1 < size
             right = neighbours.select {|n| n[1][0] == 2 }.first
             rtile = input.select {|t| t[0] == right[0] }.first
-            rotate_tile(input, rtile, right[1][1], 7)
+            rotate_tile(rtile, right[1][1], 7)
             image[c][r+1] = rtile
         end
         if c+1 < size
             below = neighbours.select {|n| n[1][0] == 5 }.first
             btile = input.select {|t| t[0] == below[0] }.first
-            rotate_tile(input, btile, below[1][1], 0)
+            rotate_tile(btile, below[1][1], 0)
             image[c+1][r] = btile
         end
     end
