@@ -23,7 +23,7 @@
 |[19](https://adventofcode.com/2020/day/19)|Monster Messages|[view](solutions/day19.rb)|⭐ ⭐|
 |[20](https://adventofcode.com/2020/day/20)|Jurassic Jigsaw|[view](solutions/day20.rb)|⭐ ⭐|
 |[21](https://adventofcode.com/2020/day/21)|Allergen Assessment|[view](solutions/day21.rb)|⭐ ⭐|
-|[22](https://adventofcode.com/2020/day/22)|-|-||
+|[22](https://adventofcode.com/2020/day/22)|Crab Combat|[view](solutions/day22.rb)|⭐ ⭐|
 |[23](https://adventofcode.com/2020/day/23)|-|-||
 |[24](https://adventofcode.com/2020/day/24)|-|-||
 |[25](https://adventofcode.com/2020/day/25)|-|-||
