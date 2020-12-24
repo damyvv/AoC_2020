@@ -19,7 +19,6 @@ input.each do |instl|
     end
     tiles ^= [coord]
 end
-
 p tiles.length
 
 # Part 2
