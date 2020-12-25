@@ -26,4 +26,4 @@
 |[22](https://adventofcode.com/2020/day/22)|Crab Combat|[view](solutions/day22.rb)|⭐ ⭐|
 |[23](https://adventofcode.com/2020/day/23)|Crab Cups|[view](solutions/day23.rb)|⭐ ⭐|
 |[24](https://adventofcode.com/2020/day/24)|Lobby Layout|[view](solutions/day24.rb)|⭐ ⭐|
-|[25](https://adventofcode.com/2020/day/25)|-|-||
+|[25](https://adventofcode.com/2020/day/25)|Combo Breaker|[view](solutions/day25.rb)|⭐ ⭐|
